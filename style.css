@@ -43,20 +43,25 @@ body {
 }
 
 .tree-head {
+      white-space: nowrap;
       list-style-type: none;
 }
 
 .tree-body {
       padding-left: 20px;
+      display: flex;
+      flex-direction: column;
 }
 
 .tree-child {
-      margin-left: 1.4em;
+      white-space: nowrap;
+      margin-top: 5px;
+      margin-left: 16px;
 }
 
 .tree > .tree-head::before {
       content: "\25B8";
-      font-size: 1.4em;
+      font-size: 16px;
 }
 
 .tree[open] > .tree-head::before {
