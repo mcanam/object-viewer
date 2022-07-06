@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: monospace;
+      font-size: 14px;
+      color: #c4c9d2;
+      width: 100vw;
+      height: 100vh;
+      padding: 20px;
+      overflow: auto;
+      background-color: #0d0e17;
+}
+
+.label-key {
+      color: #498af2;
+}
+
+.label-key.noenum {
+      opacity: 0.5;
+}
+
+.label-value.string {
+      color: #15c999;
+}
+
+.label-value.number,
+.label-value.boolean {
+      color: #965cff;
+}
+
+.label-value.function {
+      font-style: italic;
+}
+
+.label-value.function > span {
+      color: #c96b15;
+}
+
+.tree-head {
+      list-style-type: none;
+}
+
+.tree-body {
+      padding-left: 20px;
+}
+
+.tree-child {
+      margin-left: 1.4em;
+}
+
+.tree > .tree-head::before {
+      content: "\25B8";
+      font-size: 1.4em;
+}
+
+.tree[open] > .tree-head::before {
+      content: "\25BE";
+}
